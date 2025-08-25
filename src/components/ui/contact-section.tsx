@@ -9,10 +9,10 @@ const ContactSection = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            Let's <span className="hero-text">Connect</span>
+            Kết nối <span className="hero-text">cùng tôi</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Ready to discuss opportunities and bring ideas to life
+            Sẵn sàng thảo luận cơ hội và hiện thực hóa ý tưởng
           </p>
         </div>
 
@@ -20,7 +20,7 @@ const ContactSection = () => {
           {/* Contact Info */}
           <Card className="section-gradient card-hover border-border/50">
             <CardHeader>
-              <CardTitle>Get in Touch</CardTitle>
+              <CardTitle>Liên hệ</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
@@ -30,7 +30,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground text-sm">duytan@uet.edu.vn</p>
+                    <p className="text-muted-foreground text-sm">td.tan2711@gmail.com</p>
                   </div>
                 </div>
 
@@ -40,7 +40,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-muted-foreground text-sm">+84 XXX XXX XXX</p>
+                    <p className="text-muted-foreground text-sm">0327728199</p>
                   </div>
                 </div>
 
@@ -50,14 +50,14 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground text-sm">Hanoi, Vietnam</p>
+                    <p className="text-muted-foreground text-sm">25/89 Thịnh Quang, Đống Đa, HN</p>
                   </div>
                 </div>
               </div>
 
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground mb-4">
-                  Connect with me on social platforms:
+                  Kết nối qua mạng xã hội:
                 </p>
                 <div className="flex gap-3">
                   <Button variant="outline" size="sm" className="gap-2">
@@ -78,36 +78,36 @@ const ContactSection = () => {
           {/* Status Card */}
           <Card className="section-gradient card-hover border-border/50">
             <CardHeader>
-              <CardTitle>Current Status</CardTitle>
+              <CardTitle>Tình trạng hiện tại</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Availability</span>
+                  <span className="text-muted-foreground">Tình trạng</span>
                   <Badge className="bg-green-500/10 text-green-400 hover:bg-green-500/20">
-                    Available
+                    Sẵn sàng làm việc
                   </Badge>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Response Time</span>
-                  <Badge variant="secondary">Within 24 hours</Badge>
+                  <span className="text-muted-foreground">Thời gian phản hồi</span>
+                  <Badge variant="secondary">Trong vòng 24h</Badge>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Preferred Contact</span>
+                  <span className="text-muted-foreground">Liên hệ ưa thích</span>
                   <Badge variant="outline">Email</Badge>
                 </div>
               </div>
 
               <div className="pt-4 border-t border-border/50">
                 <p className="text-sm text-muted-foreground mb-4">
-                  I'm actively seeking new opportunities and would love to discuss how 
-                  I can contribute to your team's success.
+                  Tôi đang tích cực tìm kiếm cơ hội mới và mong muốn thảo luận về cách 
+                  đóng góp vào sự thành công của đội ngũ.
                 </p>
                 <Button className="w-full gap-2">
                   <Mail className="w-4 h-4" />
-                  Send Message
+                  Gửi tin nhắn
                 </Button>
               </div>
             </CardContent>

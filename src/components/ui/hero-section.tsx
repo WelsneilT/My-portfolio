@@ -25,23 +25,23 @@ const HeroSection = () => {
                 Available for Opportunities
               </Badge>
               <h1 className="text-5xl lg:text-7xl font-bold">
-                Hi, I'm{" "}
-                <span className="hero-text">Duy Tan</span>
+                Xin chào, tôi là{" "}
+                <span className="hero-text">Tống Duy Tân</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Engineering Student from University of Engineering and Technology (UET)
-                passionate about technology and innovation.
+                AI Engineer | Sinh viên Đại học Công nghệ, ĐHQGHN
+                chuyên về Trí tuệ Nhân tạo và phát triển hệ thống thông minh.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="gap-2">
                 <Mail className="w-4 h-4" />
-                Contact Me
+                Liên hệ
               </Button>
               <Button variant="outline" size="lg" className="gap-2">
                 <Download className="w-4 h-4" />
-                Download CV
+                Tải CV
               </Button>
             </div>
             
@@ -60,20 +60,20 @@ const HeroSection = () => {
             <Card className="p-8 section-gradient card-hover border-border/50">
               <div className="grid grid-cols-2 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold hero-text">UET</div>
-                  <div className="text-sm text-muted-foreground">University</div>
+                  <div className="text-3xl font-bold hero-text">VNU</div>
+                  <div className="text-sm text-muted-foreground">Đại học</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold hero-text">2024</div>
-                  <div className="text-sm text-muted-foreground">Class of</div>
+                  <div className="text-3xl font-bold hero-text">AI</div>
+                  <div className="text-sm text-muted-foreground">Chuyên ngành</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold hero-text">Tech</div>
-                  <div className="text-sm text-muted-foreground">Focus</div>
+                  <div className="text-3xl font-bold hero-text">3.21</div>
+                  <div className="text-sm text-muted-foreground">GPA</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold hero-text">Ready</div>
-                  <div className="text-sm text-muted-foreground">To Work</div>
+                  <div className="text-sm text-muted-foreground">Sẵn sàng</div>
                 </div>
               </div>
             </Card>

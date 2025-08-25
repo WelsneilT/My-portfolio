@@ -4,9 +4,10 @@ import { GraduationCap, User, Target } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    "JavaScript", "TypeScript", "React", "Node.js", 
-    "Python", "Java", "Git", "Database Design",
-    "Problem Solving", "Team Collaboration"
+    "Python", "JavaScript", "TypeScript", "React", "Django",
+    "PyTorch", "LangChain", "LangGraph", "LLMs", "Flask",
+    "Kafka", "Hadoop", "Docker", "SQLite", "PostgreSQL",
+    "AI/ML", "Generative AI", "Data Science", "Full-Stack Development"
   ];
 
   return (
@@ -14,10 +15,10 @@ const AboutSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            About <span className="hero-text">Me</span>
+            Về <span className="hero-text">Tôi</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A dedicated engineering student with a passion for technology and innovation
+            AI Engineer với kinh nghiệm thực tế trong phát triển hệ thống AI và ứng dụng thông minh
           </p>
         </div>
 
@@ -32,9 +33,10 @@ const AboutSection = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                I'm Duy Tan, an ambitious engineering student at the University of Engineering 
-                and Technology (UET). With a strong foundation in technology and a drive for 
-                continuous learning, I'm ready to contribute to innovative projects.
+                Tôi là Tống Duy Tân, AI Engineer và sinh viên chuyên ngành Trí tuệ Nhân tạo 
+                tại Đại học Công nghệ, ĐHQGHN. Với kinh nghiệm thực tế tại Goline Financial 
+                Technology JSC và các dự án nghiên cứu AI, tôi sẵn sàng đóng góp vào các dự án 
+                công nghệ tiên tiến.
               </p>
             </CardContent>
           </Card>
@@ -49,13 +51,13 @@ const AboutSection = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h3 className="font-semibold">University of Engineering and Technology</h3>
-                <p className="text-muted-foreground">Bachelor's Degree in Engineering</p>
-                <p className="text-sm text-muted-foreground">Expected Graduation: 2024</p>
+                <h3 className="font-semibold">Đại học Công nghệ, ĐHQGHN</h3>
+                <p className="text-muted-foreground">Cử nhân Trí tuệ Nhân tạo</p>
+                <p className="text-sm text-muted-foreground">GPA: 3.21/4.00 | 2022 - Hiện tại</p>
               </div>
               <p className="text-muted-foreground text-sm">
-                Focused on modern engineering practices, software development, 
-                and technological innovation.
+                Chuyên sâu về AI/ML, phát triển hệ thống thông minh, 
+                và ứng dụng công nghệ trong thực tiễn.
               </p>
             </CardContent>
           </Card>
@@ -70,9 +72,9 @@ const AboutSection = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Seeking opportunities to apply my technical skills in a dynamic 
-                work environment. Eager to contribute to innovative projects while 
-                continuing to grow professionally.
+                Tìm kiếm cơ hội ứng dụng kỹ năng AI/ML trong môi trường làm việc 
+                năng động. Mong muốn đóng góp vào các dự án đổi mới công nghệ 
+                và phát triển nghề nghiệp bền vững.
               </p>
             </CardContent>
           </Card>
@@ -80,7 +82,7 @@ const AboutSection = () => {
 
         {/* Skills Section */}
         <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Technical Skills</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">Kỹ năng Công nghệ</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {skills.map((skill, index) => (
               <Badge 
