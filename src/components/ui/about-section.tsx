@@ -32,18 +32,15 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start mb-24">
-          {/* Professional Image Placeholder */}
+          {/* Professional Photo */}
           <div className="flex justify-center lg:justify-start">
             <div className="gradient-border">
-              <div className="w-80 h-96 bg-gradient-to-br from-card via-card to-primary/5 rounded-lg flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto flex items-center justify-center">
-                    <User className="w-16 h-16 text-primary" />
-                  </div>
-                  <div className="text-muted-foreground">
-                    Professional Photo
-                  </div>
-                </div>
+              <div className="w-80 h-96 overflow-hidden rounded-lg">
+                <img 
+                  src="/lovable-uploads/5ccaa63b-23b8-4a00-a482-44838fdebc0a.png" 
+                  alt="Professional photo of Tong Tan"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </div>
           </div>
