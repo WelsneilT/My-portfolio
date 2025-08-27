@@ -25,7 +25,7 @@ const AboutSection = () => {
             A Product-Minded <span className="hero-text">AI Engineer</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Kicking off my journey at the prestigious Kim Lien High School and now honing my expertise 
+            Starting my journey at the prestigious Kim Lien High School and now honing my expertise 
             in Artificial Intelligence at VNU-UET, I bridge the gap between deep academic theory and 
             practical, impactful applications.
           </p>

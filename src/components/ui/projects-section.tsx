@@ -8,35 +8,35 @@ const ProjectsSection = () => {
     {
       title: "AI Storybook & Podcast Producer",
       period: "6/2025 - 7/2025",
-      description: "Phát triển nền tảng full-stack tự động tạo sách truyện minh họa và podcast cho trẻ em, sử dụng pipeline AI đa mô thức (LLM, Diffusion, TTS).",
+      description: "Developed a full-stack platform that automatically creates illustrated storybooks and podcasts for children, using multi-modal AI pipeline (LLM, Diffusion, TTS).",
       technologies: ["Python", "Django", "Celery", "Redis", "LLMs", "Diffusers", "TTS", "JavaScript"],
       type: "Generative AI & Full-Stack Systems"
     },
     {
       title: "Online Bookstore",
       period: "4/2024 - 7/2024", 
-      description: "Phát triển nền tảng thương mại điện tử full-stack, quản lý frontend, backend và cơ sở dữ liệu người dùng sử dụng Django và SQLite.",
+      description: "Developed a full-stack e-commerce platform, managing frontend, backend and user database using Django and SQLite.",
       technologies: ["Python", "Django", "Docker", "SQLiteStudio", "JavaScript"],
       type: "Web & Data Engineering"
     },
     {
       title: "Real-time Smartphone Price Prediction",
       period: "8/2024 - 11/2024",
-      description: "Thiết kế hệ thống big data cung cấp dự đoán giá thời gian thực, xử lý dữ liệu streaming với Kafka và Hadoop, trực quan hóa insights trên Flask web app.",
+      description: "Designed big data system providing real-time price predictions, processing streaming data with Kafka and Hadoop, visualizing insights on Flask web app.",
       technologies: ["Python", "Apache Kafka", "Hadoop", "HBase", "Flask", "Power BI"],
       type: "Deep Learning & Data Science"
     },
     {
       title: "Lightweight GANs for Medical Imaging",
       period: "2/2025 - 5/2025",
-      description: "Thiết kế lightweight GAN để tạo ra hình ảnh y tế chất lượng cao với chi phí thấp, triển khai Teacher-Student Knowledge Distillation framework.",
+      description: "Designed lightweight GAN to generate high-quality medical images at low cost, implementing Teacher-Student Knowledge Distillation framework.",
       technologies: ["Python", "PyTorch", "WGANs"],
       type: "Deep Learning & Data Science"
     },
     {
       title: "Churn Prediction and Analysis",
       period: "2/2025 - 4/2025",
-      description: "Phát triển hệ thống chủ động xác định và giữ chân khách hàng có nguy cơ rời bỏ, áp dụng Machine Learning và Survival Analysis.",
+      description: "Developed proactive system to identify and retain customers at risk of churn, applying Machine Learning and Survival Analysis.",
       technologies: ["Python", "R", "Django"],
       type: "Deep Learning & Data Science"
     }
@@ -47,10 +47,10 @@ const ProjectsSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            Dự án <span className="hero-text">Nổi bật</span>
+            Featured <span className="hero-text">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Một số dự án AI và phát triển hệ thống tôi đã thực hiện
+            Some AI and system development projects I have completed
           </p>
         </div>
 
@@ -95,7 +95,7 @@ const ProjectsSection = () => {
                   </Button>
                   <Button variant="outline" size="sm" className="gap-2">
                     <ExternalLink className="w-4 h-4" />
-                    Chi tiết
+                    Details
                   </Button>
                 </div>
               </CardContent>

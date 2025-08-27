@@ -32,19 +32,19 @@ const HeroSection = () => {
                 <span className="typewriter hero-text">Tong Duy Tan</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                AI Engineer | Sinh viên Đại học Công nghệ, ĐHQGHN
-                chuyên về Trí tuệ Nhân tạo và phát triển hệ thống thông minh.
+                AI Engineer | Student at VNU University of Engineering and Technology
+                specializing in Artificial Intelligence and intelligent system development.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="gap-2">
                 <Mail className="w-4 h-4" />
-                Liên hệ
+                Contact Me
               </Button>
               <Button variant="outline" size="lg" className="gap-2">
                 <Download className="w-4 h-4" />
-                Tải CV
+                Download CV
               </Button>
             </div>
             
@@ -64,11 +64,11 @@ const HeroSection = () => {
               <div className="grid grid-cols-2 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold hero-text">VNU</div>
-                  <div className="text-sm text-muted-foreground">Đại học</div>
+                  <div className="text-sm text-muted-foreground">University</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold hero-text">AI</div>
-                  <div className="text-sm text-muted-foreground">Chuyên ngành</div>
+                  <div className="text-sm text-muted-foreground">Major</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold hero-text">3.21</div>
@@ -76,7 +76,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <div className="text-3xl font-bold hero-text">Ready</div>
-                  <div className="text-sm text-muted-foreground">Sẵn sàng</div>
+                  <div className="text-sm text-muted-foreground">For Work</div>
                 </div>
               </div>
             </Card>

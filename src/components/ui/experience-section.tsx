@@ -8,10 +8,10 @@ const ExperienceSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            Kinh nghiệm <span className="hero-text">Làm việc</span>
+            Work <span className="hero-text">Experience</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Hành trình phát triển chuyên môn và nghiên cứu của tôi
+            My professional development and research journey
           </p>
         </div>
 
@@ -45,11 +45,11 @@ const ExperienceSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Phát triển Strategy Generator Agent sử dụng LLMs để tạo chiến lược đầu tư cá nhân hóa dựa trên hồ sơ rủi ro người dùng và phân tích dữ liệu thị trường</span>
+                  <span>Developed Strategy Generator Agent using LLMs to create personalized investment strategies based on user risk profiles and market data analysis</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Nghiên cứu xu hướng AI mới nổi trong FinTech và xây dựng chatbot hỗ trợ khách hàng</span>
+                  <span>Researched emerging AI trends in FinTech and built customer support chatbots</span>
                 </li>
               </ul>
             </CardContent>
@@ -65,7 +65,7 @@ const ExperienceSection = () => {
                 <div className="flex-1">
                   <CardTitle className="text-xl mb-2">AI in Education Research Student</CardTitle>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-muted-foreground">
-                    <span className="font-medium">Dưới sự giám sát của Dr. Trần Văn Khánh (ICTU - Thai Nguyen University & FPT.AI)</span>
+                    <span className="font-medium">Under supervision of Dr. Tran Van Khanh (ICTU - Thai Nguyen University & FPT.AI)</span>
                     <span className="hidden sm:inline">•</span>
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
@@ -79,11 +79,11 @@ const ExperienceSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Nghiên cứu AI hiện đại để thiết kế hệ thống multi-agent cho học tập thích ứng, lấy cảm hứng từ frameworks như ATLAS</span>
+                  <span>Research modern AI to design multi-agent systems for adaptive learning, inspired by frameworks like ATLAS</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Xây dựng scientific paper agent sử dụng LangGraph để tự động phân tích, tìm kiếm và tóm tắt các bài báo nghiên cứu phức tạp</span>
+                  <span>Built scientific paper agent using LangGraph to automatically analyze, search and summarize complex research papers</span>
                 </li>
               </ul>
               

@@ -9,10 +9,10 @@ const ContactSection = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            Kết nối <span className="hero-text">cùng tôi</span>
+            Get in <span className="hero-text">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Sẵn sàng thảo luận cơ hội và hiện thực hóa ý tưởng
+            Ready to discuss opportunities and bring ideas to life
           </p>
         </div>
 
@@ -20,7 +20,7 @@ const ContactSection = () => {
           {/* Contact Info */}
           <Card className="section-gradient card-hover border-border/50">
             <CardHeader>
-              <CardTitle>Liên hệ</CardTitle>
+              <CardTitle>Contact Info</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
@@ -57,7 +57,7 @@ const ContactSection = () => {
 
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground mb-4">
-                  Kết nối qua mạng xã hội:
+                  Connect via social media:
                 </p>
                 <div className="flex gap-3">
                   <Button variant="outline" size="sm" className="gap-2">
@@ -78,36 +78,36 @@ const ContactSection = () => {
           {/* Status Card */}
           <Card className="section-gradient card-hover border-border/50">
             <CardHeader>
-              <CardTitle>Tình trạng hiện tại</CardTitle>
+              <CardTitle>Current Status</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Tình trạng</span>
+                  <span className="text-muted-foreground">Status</span>
                   <Badge className="bg-green-500/10 text-green-400 hover:bg-green-500/20">
-                    Sẵn sàng làm việc
+                    Available for work
                   </Badge>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Thời gian phản hồi</span>
-                  <Badge variant="secondary">Trong vòng 24h</Badge>
+                  <span className="text-muted-foreground">Response time</span>
+                  <Badge variant="secondary">Within 24h</Badge>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Liên hệ ưa thích</span>
+                  <span className="text-muted-foreground">Preferred contact</span>
                   <Badge variant="outline">Email</Badge>
                 </div>
               </div>
 
               <div className="pt-4 border-t border-border/50">
                 <p className="text-sm text-muted-foreground mb-4">
-                  Tôi đang tích cực tìm kiếm cơ hội mới và mong muốn thảo luận về cách 
-                  đóng góp vào sự thành công của đội ngũ.
+                  I am actively seeking new opportunities and eager to discuss how 
+                  I can contribute to your team's success.
                 </p>
                 <Button className="w-full gap-2">
                   <Mail className="w-4 h-4" />
-                  Gửi tin nhắn
+                  Send Message
                 </Button>
               </div>
             </CardContent>

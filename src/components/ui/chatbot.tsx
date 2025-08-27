@@ -10,17 +10,17 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
       type: "bot",
-      content: "Xin chào! Tôi là AI Assistant của Duy Tân. Tôi có thể giúp bạn tìm hiểu về kinh nghiệm, dự án và kỹ năng của anh ấy. Bạn muốn biết điều gì?",
+      content: "Hello! I'm Tan's AI Assistant. I can help you learn about his experience, projects, and skills. What would you like to know?",
       time: new Date().toLocaleTimeString()
     }
   ]);
   const [input, setInput] = useState("");
 
   const quickQuestions = [
-    "Kinh nghiệm làm việc",
-    "Dự án AI nổi bật", 
-    "Kỹ năng công nghệ",
-    "Thông tin liên hệ"
+    "Work Experience",
+    "Featured AI Projects", 
+    "Technical Skills",
+    "Contact Information"
   ];
 
   const handleSendMessage = () => {
@@ -39,16 +39,16 @@ const Chatbot = () => {
       let botResponse = "";
       const lowerInput = input.toLowerCase();
       
-      if (lowerInput.includes("kinh nghiệm") || lowerInput.includes("làm việc")) {
-        botResponse = "Duy Tân có kinh nghiệm thực tế tại Goline Financial Technology JSC với vai trò AI Intern, phát triển Strategy Generator Agent và nghiên cứu AI trong FinTech. Anh cũng đang nghiên cứu AI in Education dưới sự giám sát của Dr. Trần Văn Khánh.";
-      } else if (lowerInput.includes("dự án") || lowerInput.includes("ai")) {
-        botResponse = "Duy Tân đã thực hiện nhiều dự án ấn tượng như AI Storybook & Podcast Producer (sử dụng LLM, Diffusion, TTS), Real-time Smartphone Price Prediction (Kafka, Hadoop), và Lightweight GANs for Medical Imaging. Tất cả đều ứng dụng công nghệ AI tiên tiến.";
-      } else if (lowerInput.includes("kỹ năng") || lowerInput.includes("công nghệ")) {
-        botResponse = "Kỹ năng chính của Duy Tân bao gồm: Python, JavaScript, PyTorch, LangChain, LangGraph, LLMs, Django, Flask, Kafka, Hadoop, Docker và nhiều công nghệ AI/ML khác. Anh có kinh nghiệm mạnh về Generative AI và Full-Stack Development.";
-      } else if (lowerInput.includes("liên hệ") || lowerInput.includes("contact")) {
-        botResponse = "Bạn có thể liên hệ với Duy Tân qua:\n📧 Email: td.tan2711@gmail.com\n📱 Phone: 0327728199\n📍 Địa chỉ: 25/89 Thịnh Quang, Đống Đa, HN\nAnh luôn sẵn sàng phản hồi trong vòng 24h!";
+      if (lowerInput.includes("experience") || lowerInput.includes("work")) {
+        botResponse = "Tan has practical experience at Goline Financial Technology JSC as an AI Intern, developing Strategy Generator Agent and researching AI in FinTech. He's also researching AI in Education under supervision of Dr. Tran Van Khanh.";
+      } else if (lowerInput.includes("project") || lowerInput.includes("ai")) {
+        botResponse = "Tan has completed impressive projects like AI Storybook & Podcast Producer (using LLM, Diffusion, TTS), Real-time Smartphone Price Prediction (Kafka, Hadoop), and Lightweight GANs for Medical Imaging. All applying cutting-edge AI technology.";
+      } else if (lowerInput.includes("skill") || lowerInput.includes("tech")) {
+        botResponse = "Tan's core skills include: Python, JavaScript, PyTorch, LangChain, LangGraph, LLMs, Django, Flask, Kafka, Hadoop, Docker and many other AI/ML technologies. He has strong experience in Generative AI and Full-Stack Development.";
+      } else if (lowerInput.includes("contact") || lowerInput.includes("reach")) {
+        botResponse = "You can contact Tan via:\n📧 Email: td.tan2711@gmail.com\n📱 Phone: +84 327 728 199\n📍 Address: Dong Da, Hanoi, Vietnam\nHe's always ready to respond within 24h!";
       } else {
-        botResponse = "Cảm ơn bạn đã quan tâm! Tôi có thể chia sẻ thêm về kinh nghiệm làm việc, các dự án AI, kỹ năng công nghệ hoặc thông tin liên hệ của Duy Tân. Bạn muốn tìm hiểu về điều gì cụ thể?";
+        botResponse = "Thanks for your interest! I can share more about Tan's work experience, AI projects, technical skills, or contact information. What would you like to know specifically?";
       }
 
       const botMessage = {
@@ -98,7 +98,7 @@ const Chatbot = () => {
                     <h3 className="font-semibold text-sm">AI Assistant</h3>
                     <div className="flex items-center gap-1">
                       <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                      <span className="text-xs text-muted-foreground">Đang hoạt động</span>
+                      <span className="text-xs text-muted-foreground">Online</span>
                     </div>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const Chatbot = () => {
               {/* Quick Questions */}
               {messages.length === 1 && (
                 <div className="p-4 border-t border-border/50">
-                  <p className="text-xs text-muted-foreground mb-2">Câu hỏi gợi ý:</p>
+                  <p className="text-xs text-muted-foreground mb-2">Quick questions:</p>
                   <div className="flex flex-wrap gap-2">
                     {quickQuestions.map((question, index) => (
                       <Badge
@@ -172,7 +172,7 @@ const Chatbot = () => {
                   <Input
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder="Nhập câu hỏi của bạn..."
+                    placeholder="Type your question..."
                     className="flex-1 text-sm"
                     onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
                   />
