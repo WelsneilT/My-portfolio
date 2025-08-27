@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card/50">
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card/50"></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto max-w-6xl">
