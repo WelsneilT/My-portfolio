@@ -60,12 +60,22 @@ const ContactSection = () => {
                   Connect via social media:
                 </p>
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="gap-2">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="gap-2"
+                    onClick={() => window.open('https://github.com/WelsneilT', '_blank')}
+                  >
                     <Github className="w-4 h-4" />
                     GitHub
                     <ExternalLink className="w-3 h-3" />
                   </Button>
-                  <Button variant="outline" size="sm" className="gap-2">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="gap-2"
+                    onClick={() => window.open('https://www.linkedin.com/in/t%E1%BB%91ng-t%C3%A2n-571bb7365/', '_blank')}
+                  >
                     <Linkedin className="w-4 h-4" />
                     LinkedIn
                     <ExternalLink className="w-3 h-3" />
@@ -105,7 +115,10 @@ const ContactSection = () => {
                   I am actively seeking new opportunities and eager to discuss how 
                   I can contribute to your team's success.
                 </p>
-                <Button className="w-full gap-2">
+                <Button 
+                  className="w-full gap-2"
+                  onClick={() => window.open('mailto:td.tan2711@gmail.com', '_blank')}
+                >
                   <Mail className="w-4 h-4" />
                   Send Message
                 </Button>
