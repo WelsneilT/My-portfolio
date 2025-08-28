@@ -32,11 +32,11 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-24">
+        <div className="grid lg:grid-cols-5 gap-12 items-start mb-24">
           {/* Professional Photo */}
-          <div className="flex justify-center lg:justify-start">
+          <div className="lg:col-span-2 flex justify-center lg:justify-start">
             <div className="gradient-border">
-              <div className="w-80 h-96 overflow-hidden rounded-lg">
+              <div className="w-72 h-80 overflow-hidden rounded-lg">
                 <img 
                   src="/lovable-uploads/5ccaa63b-23b8-4a00-a482-44838fdebc0a.png" 
                   alt="Professional photo of Tong Tan"
@@ -47,7 +47,7 @@ const AboutSection = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-8">
+          <div className="lg:col-span-3 space-y-8">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 My experience at <span className="text-primary font-semibold">Goline Financial Technology JSC</span> and 
@@ -57,42 +57,44 @@ const AboutSection = () => {
 
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-foreground">Key Achievements</h3>
-                {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <p className="text-muted-foreground">{achievement}</p>
-                  </div>
-                ))}
+                <div className="grid gap-3">
+                  {achievements.map((achievement, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <p className="text-muted-foreground text-sm leading-relaxed">{achievement}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Education & Goals Cards */}
-            <div className="grid gap-6">
+            <div className="grid sm:grid-cols-2 gap-6">
               <Card className="section-gradient card-hover border-border/50">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <GraduationCap className="w-6 h-6 text-primary" />
+                <CardHeader className="pb-4">
+                  <CardTitle className="flex items-center gap-3 text-lg">
+                    <GraduationCap className="w-5 h-5 text-primary" />
                     Education
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-0">
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-foreground">VNU University of Engineering and Technology</h3>
-                    <p className="text-muted-foreground">Bachelor's Degree in Artificial Intelligence</p>
-                    <p className="text-sm text-accent">GPA: 3.21/4.00 | 2022 - Present</p>
+                    <h3 className="font-semibold text-foreground text-sm">VNU University of Engineering and Technology</h3>
+                    <p className="text-muted-foreground text-sm">Bachelor's Degree in Artificial Intelligence</p>
+                    <p className="text-xs text-accent">GPA: 3.21/4.00 | 2022 - Present</p>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="section-gradient card-hover border-border/50">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <Target className="w-6 h-6 text-primary" />
+                <CardHeader className="pb-4">
+                  <CardTitle className="flex items-center gap-3 text-lg">
+                    <Target className="w-5 h-5 text-primary" />
                     Career Goals
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                <CardContent className="pt-0">
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Seeking opportunities to apply AI/ML skills in dynamic environments. 
                     Eager to contribute to innovative technology projects and sustainable career development.
                   </p>
