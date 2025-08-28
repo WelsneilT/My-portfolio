@@ -6,7 +6,6 @@ const AboutSection = () => {
   const achievements = [
     "Led development of Strategy Generator Agent - AI system providing personalized investment strategies",
     "Automated 80% of scientific literature review process using LangGraph agents",
-    "Engineered and deployed 5+ end-to-end AI/ML projects from concept to production",
     "Built interactive web applications for both online and batch predictions",
     "Applied research on AI in FinTech by participating in internal competitions"
   ];
