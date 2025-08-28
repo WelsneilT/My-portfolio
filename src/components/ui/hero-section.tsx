@@ -22,16 +22,16 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <Badge variant="secondary" className="w-fit">
+              <Badge variant="secondary" className="w-fit animate-fade-in opacity-0 [animation-delay:0.5s] [animation-fill-mode:forwards]">
                 Available for Opportunities
               </Badge>
-              <h1 className="text-2xl text-muted-foreground font-medium mb-4">
+              <h1 className="text-2xl text-muted-foreground font-medium mb-4 animate-fade-in opacity-0 [animation-delay:0.8s] [animation-fill-mode:forwards]">
                 Hello, I'm
               </h1>
-              <h2 className="text-6xl lg:text-8xl font-bold leading-tight">
+              <h2 className="text-6xl lg:text-8xl font-bold leading-tight animate-fade-in opacity-0 [animation-delay:1.1s] [animation-fill-mode:forwards]">
                 <span className="typewriter hero-text">Tong Duy Tan</span>
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in opacity-0 [animation-delay:1.4s] [animation-fill-mode:forwards]">
                 AI Engineer | Student at VNU University of Engineering and Technology
                 specializing in Artificial Intelligence and intelligent system development.
               </p>
