@@ -4,17 +4,19 @@ import { GraduationCap, User, Target, CheckCircle } from "lucide-react";
 
 const AboutSection = () => {
   const achievements = [
-    "Contributed to a 20% improvement in risk profile personalization accuracy",
-    "Automated 80% of the scientific literature review process for research projects", 
-    "Engineered and deployed 5+ end-to-end AI/ML projects from concept to production"
+    "Led development of Strategy Generator Agent - AI system providing personalized investment strategies",
+    "Automated 80% of scientific literature review process using LangGraph agents",
+    "Engineered and deployed 5+ end-to-end AI/ML projects from concept to production",
+    "Built interactive web applications for both online and batch predictions",
+    "Applied research on AI in FinTech by participating in internal competitions"
   ];
 
   const skills = [
-    { category: "Languages", items: ["Python", "JavaScript", "TypeScript", "R"] },
-    { category: "AI/ML", items: ["PyTorch", "LangChain", "LLMs", "Diffusers", "Scikit-learn"] },
-    { category: "Backend & Full-Stack", items: ["Django", "Flask", "Node.js", "Celery"] },
-    { category: "Frontend", items: ["React", "JavaScript", "HTML5", "CSS3"] },
-    { category: "Data & DevOps", items: ["Kafka", "Hadoop", "Docker", "PostgreSQL", "Redis"] }
+    { category: "Programming Languages", items: ["Python", "JavaScript", "C/C++", "Java", "HTML/CSS"] },
+    { category: "AI & Machine Learning", items: ["PyTorch", "LangChain", "LangGraph", "LLMs", "Diffusers", "TTS", "Knowledge Distillation", "WGANs"] },
+    { category: "Backend & Databases", items: ["Django", "Flask", "Celery", "Redis", "PostgreSQL", "SQLite", "HBase"] },
+    { category: "Frontend & Tools", items: ["React", "JavaScript", "HTML5", "CSS3", "Docker"] },
+    { category: "Big Data & Analytics", items: ["Apache Kafka", "Hadoop", "Power BI", "Pandas", "NumPy"] }
   ];
 
   return (
@@ -25,9 +27,9 @@ const AboutSection = () => {
             A Product-Minded <span className="hero-text">AI Engineer</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Starting my journey at the prestigious Kim Lien High School and now honing my expertise 
-            in Artificial Intelligence at VNU-UET, I bridge the gap between deep academic theory and 
-            practical, impactful applications.
+            Starting my journey at the prestigious Kim Lien High School and now pursuing my degree 
+            in Artificial Intelligence at VNU-UET, I bridge the gap between cutting-edge research and 
+            practical, industry-ready solutions.
           </p>
         </div>
 
@@ -49,9 +51,9 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My experiences at <span className="text-primary font-semibold">Goline Financial Technology</span> and 
-                <span className="text-primary font-semibold"> FPT.AI</span> have solidified my career goal: to leverage 
-                Generative AI and deep learning models to solve complex challenges in FinTech and EdTech.
+                My experience at <span className="text-primary font-semibold">Goline Financial Technology JSC</span> and 
+                research collaboration with <span className="text-primary font-semibold">FPT.AI</span> have shaped my passion: 
+                leveraging Generative AI and deep learning models to solve real-world challenges in FinTech and EdTech.
               </p>
 
               <div className="space-y-4">

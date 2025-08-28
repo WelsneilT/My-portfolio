@@ -45,11 +45,15 @@ const ExperienceSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Developed Strategy Generator Agent using LLMs to create personalized investment strategies based on user risk profiles and market data analysis</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Researched emerging AI trends in FinTech and built customer support chatbots</span>
+                   <span>Led development of "Strategy Generator Agent" - AI system providing personalized investment strategies using DeepSeek LLM for data processing over 10 diverse sources including news and social media</span>
+                 </li>
+                 <li className="flex items-start gap-2">
+                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                   <span>Built Pipeline & Processing system to ensure data privacy and accuracy with real-time retrieval augmented generation (RAG)</span>
+                 </li>
+                 <li className="flex items-start gap-2">
+                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                   <span>Applied research on AI in FinTech by participating in "Intelligent Financial Chatbot Competition"</span>
                 </li>
               </ul>
             </CardContent>
@@ -76,16 +80,20 @@ const ExperienceSection = () => {
               </div>
             </CardHeader>
             <CardContent className="ml-16 space-y-4">
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Research modern AI to design multi-agent systems for adaptive learning, inspired by frameworks like ATLAS</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Built scientific paper agent using LangGraph to automatically analyze, search and summarize complex research papers</span>
-                </li>
-              </ul>
+               <ul className="space-y-3 text-muted-foreground">
+                 <li className="flex items-start gap-2">
+                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                   <span>Conducting ongoing research into AI and LLMs for adaptive education systems, involving state-of-the-art literature analysis</span>
+                 </li>
+                 <li className="flex items-start gap-2">
+                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                   <span>Developing scientific paper analysis agent using LangGraph to automate research processes</span>
+                 </li>
+                 <li className="flex items-start gap-2">
+                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                   <span>Applying Teacher-Student Knowledge Distillation framework for building AI co-pilot systems</span>
+                 </li>
+               </ul>
               
               <div className="flex flex-wrap gap-2 pt-2">
                 <Badge variant="outline" className="text-xs">Python</Badge>

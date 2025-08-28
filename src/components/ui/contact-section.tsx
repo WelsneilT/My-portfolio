@@ -48,10 +48,10 @@ const ContactSection = () => {
                   <div className="p-2 bg-primary/10 rounded-lg">
                     <MapPin className="w-4 h-4 text-primary" />
                   </div>
-                  <div>
-                    <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground text-sm">25/89 Thịnh Quang, Đống Đa, HN</p>
-                  </div>
+                   <div>
+                     <p className="font-medium">Location</p>
+                     <p className="text-muted-foreground text-sm">Đông Đa, Hà Nội</p>
+                   </div>
                 </div>
               </div>
 

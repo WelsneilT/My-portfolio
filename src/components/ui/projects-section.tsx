@@ -8,42 +8,42 @@ const ProjectsSection = () => {
     {
       title: "AI Storybook & Podcast Producer",
       period: "6/2025 - 7/2025",
-      description: "Developed a full-stack platform that automatically creates illustrated storybooks and podcasts for children, using multi-modal AI pipeline (LLM, Diffusion, TTS).",
+      description: "Automated multi-modal children's content production with full-stack platform transforming story prompts into complete illustrated storybook and podcast using LLMs, Image Diffusion, and TTS.",
       technologies: ["Python", "Django", "Celery", "Redis", "LLMs", "Diffusers", "TTS", "JavaScript"],
       type: "Generative AI & Full-Stack Systems",
       githubUrl: "https://github.com/WelsneilT/AI-Podcast-Producer"
     },
     {
-      title: "Online Bookstore",
-      period: "4/2024 - 7/2024", 
-      description: "Developed a full-stack e-commerce platform, managing frontend, backend and user database using Django and SQLite.",
-      technologies: ["Python", "Django", "Docker", "SQLiteStudio", "JavaScript"],
-      type: "Web & Data Engineering",
-      githubUrl: "https://github.com/WelsneilT/Online-Bookstore"
-    },
-    {
-      title: "Real-time Smartphone Price Prediction",
-      period: "8/2024 - 11/2024",
-      description: "Designed big data system providing real-time price predictions, processing streaming data with Kafka and Hadoop, visualizing insights on Flask web app.",
-      technologies: ["Python", "Apache Kafka", "Hadoop", "HBase", "Flask", "Power BI"],
-      type: "Deep Learning & Data Science",
-      githubUrl: "https://github.com/WelsneilT/Big-Data-Project"
-    },
-    {
-      title: "Lightweight GANs for Medical Imaging",
-      period: "2/2025 - 5/2025",
-      description: "Designed lightweight GAN to generate high-quality medical images at low cost, implementing Teacher-Student Knowledge Distillation framework.",
-      technologies: ["Python", "PyTorch", "WGANs"],
+      title: "Lightweight GANs for Medical Imaging", 
+      period: "4/2025 - 5/2025",
+      description: "Designed lightweight GAN architecture to efficiently generate high-quality medical images using Teacher-Student Knowledge Distillation framework, reducing computational costs by 73.5M parameters while maintaining 91% accuracy.",
+      technologies: ["Python", "PyTorch", "WGANs", "Knowledge Distillation", "ResNet", "NTU Dataset"],
       type: "Deep Learning & Data Science",
       githubUrl: "https://www.kaggle.com/code/welsneil/mri-lightweighted-gan"
     },
     {
       title: "Churn Prediction and Analysis",
       period: "2/2025 - 4/2025",
-      description: "Developed proactive system to identify and retain customers at risk of churn, applying Machine Learning and Survival Analysis.",
-      technologies: ["Python", "R", "Django"],
-      type: "Deep Learning & Data Science",
+      description: "Developed comprehensive churn prediction system with novel features from Survival Analysis for accurate customer churn forecasting and actionable retention insights using CatBoost and ensemble forecasting methods.",
+      technologies: ["Python", "R", "Django", "CatBoost", "Survival Analysis", "AFT Models", "SQL"],
+      type: "Deep Learning & Data Science", 
       githubUrl: "https://github.com/WelsneilT/AI-Churn-Prediction"
+    },
+    {
+      title: "Real-time Smartphone Price Prediction",
+      period: "8/2024 - 11/2024",
+      description: "Engineered scalable big data system for processing high-velocity streaming data with Apache Kafka, ensuring both real-time processing and robust storage using Hadoop with Flask web application for interactive predictions.",
+      technologies: ["Python", "Apache Kafka", "Hadoop", "HBase", "Flask", "Power BI", "REST APIs"],
+      type: "Web & Data Engineering",
+      githubUrl: "https://github.com/WelsneilT/Big-Data-Project"
+    },
+    {
+      title: "Online Bookstore",
+      period: "4/2024 - 7/2024",
+      description: "Developed full-stack e-commerce platform with comprehensive user management, inventory system, and secure transaction processing using Django framework and SQLite database.",
+      technologies: ["Python", "Django", "Docker", "SQLiteStudio", "JavaScript"],
+      type: "Web & Data Engineering",
+      githubUrl: "https://github.com/WelsneilT/Online-Bookstore"
     }
   ];
 
