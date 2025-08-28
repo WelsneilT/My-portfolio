@@ -91,7 +91,7 @@ const ExperienceSection = () => {
                  </li>
                  <li className="flex items-start gap-2">
                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                   <span>Applying Teacher-Student Knowledge Distillation framework for building AI co-pilot systems</span>
+                   <span>Working on graduation thesis: "Building an AI Co-pilot for Differentiated Lesson Plan Design"</span>
                  </li>
                </ul>
               
