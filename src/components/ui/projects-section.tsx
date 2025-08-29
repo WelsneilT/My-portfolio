@@ -59,52 +59,59 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {projects.slice(0, 3).map((project, index) => (
-            <Card key={index} className="section-gradient card-hover border-border/50">
-              <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                  <div>
-                    <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
-                    <Badge variant="secondary" className="text-xs">
+            <Card key={index} className="h-full section-gradient card-hover border-border/50 group transition-all duration-300 hover:scale-[1.02]">
+              <CardHeader className="pb-4">
+                <div className="flex flex-col gap-3">
+                  <div className="flex items-start justify-between">
+                    <Badge variant="secondary" className="text-xs whitespace-nowrap">
                       {project.type}
                     </Badge>
+                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                      <Calendar className="w-3 h-3" />
+                      {project.period}
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Calendar className="w-4 h-4" />
-                    {project.period}
-                  </div>
+                  <CardTitle className="text-lg leading-tight group-hover:text-primary transition-colors">
+                    {project.title}
+                  </CardTitle>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="space-y-4 flex flex-col h-full">
+                <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, techIndex) => (
+                <div className="flex flex-wrap gap-1.5">
+                  {project.technologies.slice(0, 4).map((tech, techIndex) => (
                     <Badge 
                       key={techIndex} 
                       variant="outline" 
-                      className="text-xs"
+                      className="text-xs px-2 py-0.5"
                     >
                       {tech}
                     </Badge>
                   ))}
+                  {project.technologies.length > 4 && (
+                    <Badge variant="outline" className="text-xs px-2 py-0.5">
+                      +{project.technologies.length - 4}
+                    </Badge>
+                  )}
                 </div>
 
-                <div className="flex gap-3 pt-2">
+                <div className="flex gap-2 pt-2 mt-auto">
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className="gap-2"
+                    className="gap-2 flex-1 text-xs"
                     onClick={() => window.open(project.githubUrl, '_blank')}
                   >
-                    <Github className="w-4 h-4" />
+                    <Github className="w-3 h-3" />
                     {project.githubUrl.includes('kaggle') ? 'Kaggle' : 'Code'}
                   </Button>
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <ExternalLink className="w-4 h-4" />
+                  <Button variant="outline" size="sm" className="gap-2 flex-1 text-xs">
+                    <ExternalLink className="w-3 h-3" />
                     Details
                   </Button>
                 </div>
