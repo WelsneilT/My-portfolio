@@ -59,8 +59,8 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid gap-8">
-          {projects.map((project, index) => (
+        <div className="grid md:grid-cols-3 gap-8">
+          {projects.slice(0, 3).map((project, index) => (
             <Card key={index} className="section-gradient card-hover border-border/50">
               <CardHeader>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
