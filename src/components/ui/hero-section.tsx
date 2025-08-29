@@ -32,7 +32,7 @@ const HeroSection = () => {
                 <span className="typewriter hero-text">Tong Duy Tan</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                AI Engineer | Student at VNU University of Engineering and Technology
+                AI Engineer | Student at UET University of Engineering and Technology
                 specializing in Artificial Intelligence and intelligent system development.
               </p>
             </div>
@@ -67,7 +67,7 @@ const HeroSection = () => {
             <Card className="p-8 section-gradient card-hover border-border/50">
               <div className="grid grid-cols-2 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold hero-text">VNU</div>
+                  <div className="text-3xl font-bold hero-text">UET</div>
                   <div className="text-sm text-muted-foreground">University</div>
                 </div>
                 <div>

@@ -48,72 +48,80 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
-            Featured <span className="hero-text">Projects</span>
+    <section className="py-24 px-4 bg-gradient-to-b from-background to-muted/20">
+      <div className="container mx-auto max-w-7xl">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+            Featured <span className="hero-text bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Some AI and system development projects I have completed
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-10">
           {projects.slice(0, 3).map((project, index) => (
-            <Card key={index} className="h-full section-gradient card-hover border-border/50 group transition-all duration-300 hover:scale-[1.02]">
-              <CardHeader className="pb-4">
-                <div className="flex flex-col gap-3">
-                  <div className="flex items-start justify-between">
-                    <Badge variant="secondary" className="text-xs whitespace-nowrap">
-                      {project.type}
-                    </Badge>
-                    <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                      <Calendar className="w-3 h-3" />
-                      {project.period}
-                    </div>
+            <Card key={index} className="group relative overflow-hidden bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border-2 border-border/20 hover:border-primary/30 transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl hover:shadow-primary/10">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              <CardHeader className="pb-6 relative z-10">
+                <div className="flex items-start justify-between mb-4">
+                  <Badge variant="secondary" className="text-sm px-3 py-1.5 font-medium bg-primary/10 text-primary border-primary/20">
+                    {project.type}
+                  </Badge>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground bg-muted/50 px-3 py-1.5 rounded-full">
+                    <Calendar className="w-4 h-4" />
+                    {project.period}
                   </div>
-                  <CardTitle className="text-lg leading-tight group-hover:text-primary transition-colors">
-                    {project.title}
-                  </CardTitle>
                 </div>
+                <CardTitle className="text-2xl lg:text-3xl font-bold leading-tight group-hover:text-primary transition-colors duration-300 mb-3">
+                  {project.title}
+                </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4 flex flex-col h-full">
-                <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+              
+              <CardContent className="space-y-6 relative z-10">
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed min-h-[120px]">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-1.5">
-                  {project.technologies.slice(0, 4).map((tech, techIndex) => (
-                    <Badge 
-                      key={techIndex} 
-                      variant="outline" 
-                      className="text-xs px-2 py-0.5"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                  {project.technologies.length > 4 && (
-                    <Badge variant="outline" className="text-xs px-2 py-0.5">
-                      +{project.technologies.length - 4}
-                    </Badge>
-                  )}
-                </div>
+                <div className="space-y-4">
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.slice(0, 6).map((tech, techIndex) => (
+                      <Badge 
+                        key={techIndex} 
+                        variant="outline" 
+                        className="text-sm px-3 py-1.5 bg-background/50 hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-all duration-300"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                    {project.technologies.length > 6 && (
+                      <Badge variant="outline" className="text-sm px-3 py-1.5 bg-background/50">
+                        +{project.technologies.length - 6}
+                      </Badge>
+                    )}
+                  </div>
 
-                <div className="flex gap-2 pt-2 mt-auto">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="gap-2 flex-1 text-xs"
-                    onClick={() => window.open(project.githubUrl, '_blank')}
-                  >
-                    <Github className="w-3 h-3" />
-                    {project.githubUrl.includes('kaggle') ? 'Kaggle' : 'Code'}
-                  </Button>
-                  <Button variant="outline" size="sm" className="gap-2 flex-1 text-xs">
-                    <ExternalLink className="w-3 h-3" />
-                    Details
-                  </Button>
+                  <div className="flex gap-3 pt-4">
+                    <Button 
+                      variant="default" 
+                      size="lg" 
+                      className="gap-3 flex-1 text-base font-medium group/btn hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
+                      onClick={() => window.open(project.githubUrl, '_blank')}
+                    >
+                      <Github className="w-5 h-5 group-hover/btn:rotate-12 transition-transform duration-300" />
+                      {project.githubUrl.includes('kaggle') ? 'Kaggle' : 'View Code'}
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="lg" 
+                      className="gap-3 flex-1 text-base font-medium hover:bg-primary/5 hover:border-primary/30 hover:text-primary transition-all duration-300 group/btn"
+                    >
+                      <ExternalLink className="w-5 h-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
+                      Details
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
