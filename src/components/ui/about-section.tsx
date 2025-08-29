@@ -32,74 +32,124 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-12 items-start mb-24">
-          {/* Professional Photo */}
-          <div className="lg:col-span-2 flex justify-center lg:justify-start">
-            <div className="gradient-border">
-              <div className="w-72 h-80 overflow-hidden rounded-lg">
-                <img 
-                  src="/lovable-uploads/5ccaa63b-23b8-4a00-a482-44838fdebc0a.png" 
-                  alt="Professional photo of Tong Tan"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-            </div>
+        <div className="relative">
+          {/* Decorative Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
           </div>
 
-          {/* Content */}
-          <div className="lg:col-span-3 space-y-8">
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                My experience at <span className="text-primary font-semibold">Goline Financial Technology JSC</span> and 
-                research collaboration with <span className="text-primary font-semibold">FPT.AI</span> have shaped my passion: 
-                leveraging Generative AI and deep learning models to solve real-world challenges in FinTech and EdTech.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            {/* Professional Photo with Enhanced Design */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative group">
+                {/* Floating Background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl scale-110 group-hover:scale-125 transition-transform duration-700"></div>
+                
+                {/* Main Photo Container */}
+                <div className="relative bg-gradient-to-br from-card/90 to-card/60 backdrop-blur-sm p-2 rounded-2xl border border-border/50 shadow-2xl group-hover:shadow-primary/25 transition-all duration-500">
+                  <div className="w-80 h-96 overflow-hidden rounded-xl relative">
+                    <img 
+                      src="/lovable-uploads/5ccaa63b-23b8-4a00-a482-44838fdebc0a.png" 
+                      alt="Professional photo of Tong Tan"
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                    {/* Overlay Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+                </div>
 
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-foreground">Key Achievements</h3>
-                <div className="grid gap-3">
-                  {achievements.map((achievement, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <p className="text-muted-foreground text-sm leading-relaxed">{achievement}</p>
-                    </div>
-                  ))}
+                {/* Floating Stats */}
+                <div className="absolute -top-4 -right-4 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground px-4 py-2 rounded-xl text-sm font-semibold shadow-lg animate-fade-in">
+                  AI Engineer
+                </div>
+                <div className="absolute -bottom-4 -left-4 bg-gradient-to-br from-accent to-accent/80 text-accent-foreground px-4 py-2 rounded-xl text-sm font-semibold shadow-lg animate-fade-in" style={{animationDelay: '0.5s'}}>
+                  3.21 GPA
                 </div>
               </div>
             </div>
 
-            {/* Education & Goals Cards */}
-            <div className="grid sm:grid-cols-2 gap-6">
-              <Card className="section-gradient card-hover border-border/50">
-                <CardHeader className="pb-4">
-                  <CardTitle className="flex items-center gap-3 text-lg">
-                    <GraduationCap className="w-5 h-5 text-primary" />
-                    Education
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <div className="space-y-2">
-                    <h3 className="font-semibold text-foreground text-sm">VNU University of Engineering and Technology</h3>
-                    <p className="text-muted-foreground text-sm">Bachelor's Degree in Artificial Intelligence</p>
-                    <p className="text-xs text-accent">GPA: 3.21/4.00 | 2022 - Present</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="section-gradient card-hover border-border/50">
-                <CardHeader className="pb-4">
-                  <CardTitle className="flex items-center gap-3 text-lg">
-                    <Target className="w-5 h-5 text-primary" />
-                    Career Goals
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    Seeking opportunities to apply AI/ML skills in dynamic environments. 
-                    Eager to contribute to innovative technology projects and sustainable career development.
+            {/* Enhanced Content */}
+            <div className="space-y-8">
+              {/* Introduction Text with Better Typography */}
+              <div className="space-y-6">
+                <div className="relative">
+                  <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+                    My experience at <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded-lg">Goline Financial Technology JSC</span> and 
+                    research collaboration with <span className="text-accent font-bold bg-accent/10 px-2 py-1 rounded-lg">FPT.AI</span> have shaped my passion: 
+                    leveraging Generative AI and deep learning models to solve real-world challenges in FinTech and EdTech.
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+
+                {/* Key Achievements with Stagger Animation */}
+                <div className="space-y-6">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground flex items-center gap-3">
+                    <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full"></div>
+                    Key Achievements
+                  </h3>
+                  <div className="grid gap-4">
+                    {achievements.map((achievement, index) => (
+                      <div 
+                        key={index} 
+                        className="flex items-start gap-4 p-4 rounded-xl bg-gradient-to-r from-card/50 to-card/30 backdrop-blur-sm border border-border/30 hover:border-primary/30 hover:shadow-lg transition-all duration-300 group animate-fade-in"
+                        style={{animationDelay: `${index * 0.2}s`}}
+                      >
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                          <CheckCircle className="w-4 h-4 text-primary-foreground" />
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">{achievement}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Enhanced Education & Goals Cards */}
+              <div className="grid gap-6">
+                <Card className="group relative overflow-hidden bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border-2 border-border/20 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardHeader className="pb-4 relative z-10">
+                    <CardTitle className="flex items-center gap-4 text-xl lg:text-2xl">
+                      <div className="p-3 bg-gradient-to-br from-primary to-primary/70 rounded-xl">
+                        <GraduationCap className="w-6 h-6 text-primary-foreground" />
+                      </div>
+                      Education
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0 relative z-10">
+                    <div className="space-y-3">
+                      <h3 className="font-bold text-foreground text-lg">UET University of Engineering and Technology</h3>
+                      <p className="text-muted-foreground text-base">Bachelor's Degree in Artificial Intelligence</p>
+                      <div className="flex items-center gap-2">
+                        <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 font-medium">
+                          GPA: 3.21/4.00
+                        </Badge>
+                        <Badge variant="outline" className="border-accent/20 text-accent">
+                          2022 - Present
+                        </Badge>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="group relative overflow-hidden bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border-2 border-border/20 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardHeader className="pb-4 relative z-10">
+                    <CardTitle className="flex items-center gap-4 text-xl lg:text-2xl">
+                      <div className="p-3 bg-gradient-to-br from-accent to-accent/70 rounded-xl">
+                        <Target className="w-6 h-6 text-accent-foreground" />
+                      </div>
+                      Career Goals
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0 relative z-10">
+                    <p className="text-muted-foreground leading-relaxed text-base lg:text-lg">
+                      Seeking opportunities to apply AI/ML skills in dynamic environments. 
+                      Eager to contribute to innovative technology projects and sustainable career development.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
