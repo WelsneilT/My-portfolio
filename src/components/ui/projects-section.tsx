@@ -47,6 +47,9 @@ const ProjectsSection = () => {
     }
   ];
 
+  const heroProject = projects[0]; // AI Storybook & Podcast Producer
+  const secondaryProjects = projects.slice(1, 3); // GANs và Churn Prediction
+
   return (
     <section className="py-24 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-7xl">
@@ -55,79 +58,179 @@ const ProjectsSection = () => {
             Featured <span className="hero-text bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Some AI and system development projects I have completed
+            Từ nghiên cứu đến sản phẩm - Khám phá những dự án AI có tác động thực tiễn
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-10 lg:gap-12">
-          {projects.slice(0, 3).map((project, index) => (
-            <Card key={index} className="group relative overflow-hidden bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border-2 border-border/20 hover:border-primary/30 transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl hover:shadow-primary/15 min-h-[700px] flex flex-col">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <CardHeader className="pb-8 relative z-10 flex-shrink-0">
-                <div className="flex flex-col gap-4 mb-6">
-                  <div className="flex items-center justify-between">
-                    <Badge variant="secondary" className="text-base px-4 py-2 font-semibold bg-primary/10 text-primary border-primary/20 whitespace-nowrap">
-                      {project.type}
-                    </Badge>
+        {/* Layout 1 + 2: Hero Project + Secondary Projects */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          
+          {/* Hero Project - Left Side (50%) */}
+          <Card className="group relative overflow-hidden bg-gradient-to-br from-card/90 to-card/50 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 transition-all duration-700 hover:shadow-3xl hover:shadow-primary/20 min-h-[800px] flex flex-col">
+            {/* Enhanced Background Effects */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition-opacity duration-700"></div>
+            
+            {/* Hero Badge */}
+            <div className="absolute top-6 left-6 z-20">
+              <Badge className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-2 text-lg font-bold shadow-lg border-0">
+                ⭐ Featured Project
+              </Badge>
+            </div>
+
+            <CardHeader className="pb-8 relative z-10 pt-20">
+              <div className="space-y-6">
+                <CardTitle className="text-4xl lg:text-5xl font-bold leading-tight group-hover:text-primary transition-colors duration-500">
+                  {heroProject.title}
+                </CardTitle>
+                
+                <div className="flex items-center gap-3 text-lg text-muted-foreground">
+                  <Calendar className="w-6 h-6 text-primary" />
+                  <span className="font-semibold">{heroProject.period}</span>
+                </div>
+
+                <Badge variant="secondary" className="text-lg px-6 py-3 font-bold bg-accent/10 text-accent border-accent/20 w-fit">
+                  {heroProject.type}
+                </Badge>
+              </div>
+            </CardHeader>
+            
+            <CardContent className="space-y-8 relative z-10 flex-1 flex flex-col">
+              {/* Problem-Solution-Impact Description */}
+              <div className="space-y-6 flex-1">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 rounded-full bg-red-400 mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-bold text-red-400">Vấn đề:</span>
+                      <span className="text-muted-foreground ml-2">Việc tạo ra nội dung truyện kể cho trẻ em tốn nhiều thời gian và chi phí.</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-base text-muted-foreground bg-muted/50 px-4 py-2 rounded-full w-fit">
-                    <Calendar className="w-5 h-5 flex-shrink-0" />
-                    <span className="whitespace-nowrap font-medium">{project.period}</span>
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-bold text-primary">Giải pháp:</span>
+                      <span className="text-muted-foreground ml-2">Xây dựng nền tảng tự động hóa toàn bộ quy trình, từ việc nhận ý tưởng đến tạo ra truyện tranh và podcast hoàn chỉnh bằng LLMs, Image Diffusion và TTS.</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-3 h-3 rounded-full bg-green-400 mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-bold text-green-400">Tác động:</span>
+                      <span className="text-muted-foreground ml-2">Giúp người dùng sáng tạo nội dung nhanh hơn gấp 10 lần với chất lượng chuyên nghiệp.</span>
+                    </div>
                   </div>
                 </div>
-                <CardTitle className="text-3xl lg:text-4xl font-bold leading-tight group-hover:text-primary transition-colors duration-300 mb-4">
-                  {project.title}
-                </CardTitle>
-              </CardHeader>
+              </div>
               
-              <CardContent className="space-y-8 relative z-10 flex-1 flex flex-col">
-                <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed flex-1">
-                  {project.description}
-                </p>
+              {/* Technologies */}
+              <div className="space-y-4">
+                <h4 className="text-lg font-semibold text-foreground">Core Technologies</h4>
+                <div className="flex flex-wrap gap-3">
+                  {heroProject.technologies.slice(0, 8).map((tech, techIndex) => (
+                    <Badge 
+                      key={techIndex} 
+                      variant="outline" 
+                      className="text-base px-4 py-2 bg-background/80 hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-all duration-300 font-medium"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col gap-4 pt-6">
+                <Button 
+                  size="lg" 
+                  className="gap-3 text-lg font-bold py-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 group/btn"
+                  onClick={() => window.open(heroProject.githubUrl, '_blank')}
+                >
+                  <Github className="w-6 h-6 group-hover/btn:rotate-12 transition-transform duration-300" />
+                  View Case Study
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="gap-3 text-lg font-bold py-6 hover:bg-accent/10 hover:border-accent/30 hover:text-accent transition-all duration-300 group/btn"
+                >
+                  <ExternalLink className="w-6 h-6 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
+                  Live Demo
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Secondary Projects - Right Side (50%) */}
+          <div className="space-y-8">
+            {secondaryProjects.map((project, index) => (
+              <Card key={index} className="group relative overflow-hidden bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border-2 border-border/20 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 min-h-[380px] flex flex-col">
+                {/* Background Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <div className="space-y-6 flex-shrink-0">
-                  <div className="flex flex-wrap gap-3">
-                    {project.technologies.slice(0, 6).map((tech, techIndex) => (
+                <CardHeader className="pb-6 relative z-10">
+                  <div className="flex items-start justify-between gap-4 mb-4">
+                    <Badge variant="secondary" className="text-sm px-3 py-1 font-semibold bg-accent/10 text-accent border-accent/20 flex-shrink-0">
+                      {project.type}
+                    </Badge>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4" />
+                      <span className="font-medium">{project.period}</span>
+                    </div>
+                  </div>
+                  <CardTitle className="text-2xl lg:text-3xl font-bold leading-tight group-hover:text-accent transition-colors duration-300">
+                    {project.title}
+                  </CardTitle>
+                </CardHeader>
+                
+                <CardContent className="space-y-6 relative z-10 flex-1 flex flex-col">
+                  <p className="text-base lg:text-lg text-muted-foreground leading-relaxed flex-1">
+                    {index === 0 ? 
+                      "Thiết kế thành công kiến trúc GAN gọn nhẹ, giảm 72.5 triệu tham số tính toán nhưng vẫn duy trì độ chính xác 91% cho ảnh y tế." :
+                      "Phát triển hệ thống dự báo khách hàng rời bỏ với các tính năng mới từ Survival Analysis, giúp đưa ra chiến lược giữ chân khách hàng hiệu quả."
+                    }
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.slice(0, 4).map((tech, techIndex) => (
                       <Badge 
                         key={techIndex} 
                         variant="outline" 
-                        className="text-base px-4 py-2 bg-background/50 hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-all duration-300 font-medium"
+                        className="text-sm px-3 py-1 bg-background/50 hover:bg-accent/10 hover:text-accent hover:border-accent/30 transition-all duration-300"
                       >
                         {tech}
                       </Badge>
                     ))}
-                    {project.technologies.length > 6 && (
-                      <Badge variant="outline" className="text-base px-4 py-2 bg-background/50 font-medium">
-                        +{project.technologies.length - 6}
+                    {project.technologies.length > 4 && (
+                      <Badge variant="outline" className="text-sm px-3 py-1 bg-background/50">
+                        +{project.technologies.length - 4}
                       </Badge>
                     )}
                   </div>
 
-                  <div className="flex gap-4 pt-4">
+                  <div className="flex gap-3 pt-2">
                     <Button 
                       variant="default" 
-                      size="lg" 
-                      className="gap-3 flex-1 text-lg font-semibold py-4 group/btn hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+                      size="sm" 
+                      className="gap-2 flex-1 text-sm font-semibold group/btn hover:shadow-lg hover:shadow-accent/20 transition-all duration-300"
                       onClick={() => window.open(project.githubUrl, '_blank')}
                     >
-                      <Github className="w-6 h-6 group-hover/btn:rotate-12 transition-transform duration-300" />
-                      {project.githubUrl.includes('kaggle') ? 'Kaggle' : 'View Code'}
+                      <Github className="w-4 h-4 group-hover/btn:rotate-12 transition-transform duration-300" />
+                      {project.githubUrl.includes('kaggle') ? 'Kaggle' : 'GitHub'}
                     </Button>
                     <Button 
                       variant="outline" 
-                      size="lg" 
-                      className="gap-3 flex-1 text-lg font-semibold py-4 hover:bg-primary/5 hover:border-primary/30 hover:text-primary transition-all duration-300 group/btn"
+                      size="sm" 
+                      className="gap-2 flex-1 text-sm font-semibold hover:bg-accent/5 hover:border-accent/30 hover:text-accent transition-all duration-300 group/btn"
                     >
-                      <ExternalLink className="w-6 h-6 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
+                      <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
                       Details
                     </Button>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
