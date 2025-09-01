@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Cake, Github, Linkedin, ExternalLink } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -52,6 +52,16 @@ const ContactSection = () => {
                      <p className="font-medium">Location</p>
                      <p className="text-muted-foreground text-sm">Đông Đa, Hà Nội</p>
                    </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <Cake className="w-4 h-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Date of Birth</p>
+                    <p className="text-muted-foreground text-sm">27/11/2004</p>
+                  </div>
                 </div>
               </div>
 

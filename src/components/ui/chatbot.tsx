@@ -23,7 +23,7 @@ const Chatbot = () => {
     "Contact Information"
   ];
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (!input.trim()) return;
 
     const userMessage = {
@@ -34,31 +34,40 @@ const Chatbot = () => {
 
     setMessages(prev => [...prev, userMessage]);
     
-    // Simulate bot response
-    setTimeout(() => {
-      let botResponse = "";
-      const lowerInput = input.toLowerCase();
-      
-      if (lowerInput.includes("experience") || lowerInput.includes("work")) {
-        botResponse = "Tan has practical experience at Goline Financial Technology JSC as an AI Intern, developing Strategy Generator Agent and researching AI in FinTech. He's also researching AI in Education under supervision of Dr. Tran Van Khanh.";
-      } else if (lowerInput.includes("project") || lowerInput.includes("ai")) {
-        botResponse = "Tan has completed impressive projects like AI Storybook & Podcast Producer (using LLM, Diffusion, TTS), Real-time Smartphone Price Prediction (Kafka, Hadoop), and Lightweight GANs for Medical Imaging. All applying cutting-edge AI technology.";
-      } else if (lowerInput.includes("skill") || lowerInput.includes("tech")) {
-        botResponse = "Tan's core skills include: Python, JavaScript, PyTorch, LangChain, LangGraph, LLMs, Django, Flask, Kafka, Hadoop, Docker and many other AI/ML technologies. He has strong experience in Generative AI and Full-Stack Development.";
-      } else if (lowerInput.includes("contact") || lowerInput.includes("reach")) {
-        botResponse = "You can contact Tan via:\n📧 Email: td.tan2711@gmail.com\n📱 Phone: +84 327 728 199\n📍 Address: Dong Da, Hanoi, Vietnam\nHe's always ready to respond within 24h!";
-      } else {
-        botResponse = "Thanks for your interest! I can share more about Tan's work experience, AI projects, technical skills, or contact information. What would you like to know specifically?";
+    try {
+      // Call the Supabase Edge Function
+      const response = await fetch('/functions/v1/ask_portfolio_bot', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query: input })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to get response');
       }
 
+      const data = await response.json();
+      
       const botMessage = {
         type: "bot",
-        content: botResponse,
+        content: data.answer || "Sorry, I couldn't generate a response. Please try again.",
         time: new Date().toLocaleTimeString()
       };
       
       setMessages(prev => [...prev, botMessage]);
-    }, 1000);
+    } catch (error) {
+      console.error('Chatbot error:', error);
+      
+      const errorMessage = {
+        type: "bot",
+        content: "Sorry, I'm having trouble connecting right now. Please try again later or contact Tan directly via email.",
+        time: new Date().toLocaleTimeString()
+      };
+      
+      setMessages(prev => [...prev, errorMessage]);
+    }
     
     setInput("");
   };
