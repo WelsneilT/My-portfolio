@@ -33,19 +33,21 @@ const Chatbot = () => {
     };
 
     setMessages(prev => [...prev, userMessage]);
+    setInput(""); // Clear input immediately
     
     try {
-      // Call the Supabase Edge Function
-      const response = await fetch('/functions/v1/ask_portfolio_bot', {
+      // Call the Supabase Edge Function using the proper URL pattern
+      const response = await fetch('https://ywvdylfmpbwrhmdrpste.supabase.co/functions/v1/ask_portfolio_bot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl3dmR5bGZtcGJ3cmhtZHJwc3RlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY3Mzg2MTcsImV4cCI6MjA3MjMxNDYxN30.sHfi64efgdm7Lw3I0cqODs5VPsY4lI_Bzik5KO0ziKM'
         },
-        body: JSON.stringify({ query: input })
+        body: JSON.stringify({ query: userMessage.content })
       });
 
       if (!response.ok) {
-        throw new Error('Failed to get response');
+        throw new Error('Failed to get response from server');
       }
 
       const data = await response.json();
@@ -68,8 +70,6 @@ const Chatbot = () => {
       
       setMessages(prev => [...prev, errorMessage]);
     }
-    
-    setInput("");
   };
 
   const handleQuickQuestion = (question) => {
