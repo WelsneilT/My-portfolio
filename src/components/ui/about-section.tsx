@@ -37,6 +37,7 @@ const AboutSection = () => {
                     src="/lovable-uploads/5ccaa63b-23b8-4a00-a482-44838fdebc0a.png" 
                     alt="Professional photo of Tong Duy Tan"
                     className="w-full h-full object-cover object-center"
+                    style={{ objectPosition: 'center 25%' }}
                   />
                 </div>
                 {/* Hover Ring */}
@@ -123,7 +124,7 @@ const AboutSection = () => {
 
             {/* Languages Section */}
             <div className="mt-12 p-6 bg-card/20 backdrop-blur-sm rounded-xl border border-border/30">
-              <h4 className="text-lg font-semibold text-foreground mb-4">Human Languages</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-4">Languages</h4>
               <div className="space-y-2 text-muted-foreground">
                 <div className="flex justify-between">
                   <span>English</span>

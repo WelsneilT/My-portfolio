@@ -58,7 +58,7 @@ const ProjectsSection = () => {
             Featured <span className="hero-text bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Từ nghiên cứu đến sản phẩm - Khám phá những dự án AI có tác động thực tiễn
+            From research to reality - Discover AI projects with real-world impact
           </p>
         </div>
 
@@ -102,22 +102,22 @@ const ProjectsSection = () => {
                   <div className="flex items-start gap-4">
                     <div className="w-3 h-3 rounded-full bg-red-400 mt-2 flex-shrink-0"></div>
                     <div>
-                      <span className="font-bold text-red-400">Vấn đề:</span>
-                      <span className="text-muted-foreground ml-2">Việc tạo ra nội dung truyện kể cho trẻ em tốn nhiều thời gian và chi phí.</span>
+                      <span className="font-bold text-red-400">Problem:</span>
+                      <span className="text-muted-foreground ml-2">Creating engaging and educational stories for children often requires significant time and cost.</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-3 h-3 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                     <div>
-                      <span className="font-bold text-primary">Giải pháp:</span>
-                      <span className="text-muted-foreground ml-2">Xây dựng nền tảng tự động hóa toàn bộ quy trình, từ việc nhận ý tưởng đến tạo ra truyện tranh và podcast hoàn chỉnh bằng LLMs, Image Diffusion và TTS.</span>
+                      <span className="font-bold text-primary">Solution:</span>
+                      <span className="text-muted-foreground ml-2">Developed a platform to fully automate the process, from idea generation to the final story and podcast, utilizing LLMs, Image Diffusion, and TTS.</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-3 h-3 rounded-full bg-green-400 mt-2 flex-shrink-0"></div>
                     <div>
-                      <span className="font-bold text-green-400">Tác động:</span>
-                      <span className="text-muted-foreground ml-2">Giúp người dùng sáng tạo nội dung nhanh hơn gấp 10 lần với chất lượng chuyên nghiệp.</span>
+                      <span className="font-bold text-green-400">Impact:</span>
+                      <span className="text-muted-foreground ml-2">Helped create quality educational content 10 times faster with professional-grade quality.</span>
                     </div>
                   </div>
                 </div>
@@ -186,8 +186,8 @@ const ProjectsSection = () => {
                 <CardContent className="space-y-6 relative z-10 flex-1 flex flex-col">
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed flex-1">
                     {index === 0 ? 
-                      "Thiết kế thành công kiến trúc GAN gọn nhẹ, giảm 72.5 triệu tham số tính toán nhưng vẫn duy trì độ chính xác 91% cho ảnh y tế." :
-                      "Phát triển hệ thống dự báo khách hàng rời bỏ với các tính năng mới từ Survival Analysis, giúp đưa ra chiến lược giữ chân khách hàng hiệu quả."
+                      "Successfully designed a lightweight GAN architecture, reducing 72.5 million parameters while maintaining 91% accuracy for medical imaging tasks." :
+                      "Developed a customer churn prediction system with various survival analysis capabilities, helping to devise effective customer retention strategies."
                     }
                   </p>
                   
