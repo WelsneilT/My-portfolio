@@ -31,7 +31,7 @@ const HeroSection = () => {
                 Hello, I'm
               </h1>
               <h2 className="text-6xl lg:text-8xl font-bold leading-tight text-white">
-                <span className="typewriter hero-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Tong Duy Tan</span>
+                <span className="typewriter hero-text bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Tong Duy Tan</span>
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed">
                 AI Engineer | Student at UET University of Engineering and Technology
@@ -73,21 +73,21 @@ const HeroSection = () => {
           {/* Stats Card */}
           <div className="flex justify-center">
             <Card className="p-8 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 shadow-xl shadow-cyan-500/10">
-              <div className="grid grid-cols-2 gap-8 text-center">
+               <div className="grid grid-cols-2 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-cyan-400">UET</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">UET</div>
                   <div className="text-sm text-gray-400">University</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-cyan-400">AI</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">AI</div>
                   <div className="text-sm text-gray-400">Major</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-cyan-400">3.21</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">3.21</div>
                   <div className="text-sm text-gray-400">GPA</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-cyan-400">Ready</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Ready</div>
                   <div className="text-sm text-gray-400">For Work</div>
                 </div>
               </div>
