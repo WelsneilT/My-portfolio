@@ -49,7 +49,11 @@ const HeroSection = () => {
             </div>
             
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon">
+              <Button 
+                variant="ghost" 
+                size="icon"
+                onClick={() => window.open('https://github.com/WelsneilT', '_blank')}
+              >
                 <Github className="w-5 h-5" />
               </Button>
               <Button 

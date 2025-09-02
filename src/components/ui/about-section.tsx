@@ -65,7 +65,12 @@ const AboutSection = () => {
 
               {/* Social Links */}
               <div className="flex gap-3 justify-center lg:justify-start">
-                <Button variant="ghost" size="icon" className="w-10 h-10">
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="w-10 h-10"
+                  onClick={() => window.open('https://github.com/WelsneilT', '_blank')}
+                >
                   <Github className="w-5 h-5" />
                 </Button>
                 <Button 
