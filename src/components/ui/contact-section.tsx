@@ -84,7 +84,7 @@ const ContactSection = () => {
                     variant="outline" 
                     size="sm" 
                     className="gap-2"
-                    onClick={() => window.open('https://www.linkedin.com/in/t%E1%BB%91ng-t%C3%A2n-571bb7365/', '_blank')}
+                    onClick={() => window.open('https://www.linkedin.com/in/duy-t%C3%A2n-t%E1%BB%91ng-571bb7365/', '_blank')}
                   >
                     <Linkedin className="w-4 h-4" />
                     LinkedIn
