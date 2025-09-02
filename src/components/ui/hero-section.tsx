@@ -46,17 +46,17 @@ const HeroSection = () => {
                 <Mail className="w-4 h-4" />
                 Contact Me
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Download className="w-4 h-4" />
-                Download CV
-              </Button>
             </div>
             
             <div className="flex gap-4">
               <Button variant="ghost" size="icon">
                 <Github className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon">
+              <Button 
+                variant="ghost" 
+                size="icon"
+                onClick={() => window.open('https://www.linkedin.com/in/duy-t%C3%A2n-t%E1%BB%91ng-571bb7365/', '_blank')}
+              >
                 <Linkedin className="w-5 h-5" />
               </Button>
             </div>

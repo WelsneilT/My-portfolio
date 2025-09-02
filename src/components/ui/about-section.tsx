@@ -63,24 +63,17 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="gap-2">
-                  <Mail className="w-4 h-4" />
-                  Get in Touch
-                </Button>
-                <Button variant="outline" size="lg" className="gap-2">
-                  <Download className="w-4 h-4" />
-                  View CV
-                </Button>
-              </div>
-
               {/* Social Links */}
               <div className="flex gap-3 justify-center lg:justify-start">
                 <Button variant="ghost" size="icon" className="w-10 h-10">
                   <Github className="w-5 h-5" />
                 </Button>
-                <Button variant="ghost" size="icon" className="w-10 h-10">
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="w-10 h-10"
+                  onClick={() => window.open('https://www.linkedin.com/in/duy-t%C3%A2n-t%E1%BB%91ng-571bb7365/', '_blank')}
+                >
                   <Linkedin className="w-5 h-5" />
                 </Button>
               </div>
