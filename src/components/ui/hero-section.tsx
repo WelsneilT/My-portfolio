@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Download, Github, Linkedin, ChevronDown } from "lucide-react";
+import PlexusBackground from "@/components/ui/plexus-background";
 
 const HeroSection = () => {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -13,8 +14,9 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card/50"></div>
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden" style={{ backgroundColor: '#0d1a2d' }}>
+      {/* Animated Plexus Background */}
+      <PlexusBackground />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto max-w-6xl">
@@ -22,16 +24,16 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <Badge variant="secondary" className="w-fit">
+              <Badge variant="secondary" className="w-fit bg-cyan-500/20 text-cyan-300 border-cyan-500/30">
                 Available for Opportunities
               </Badge>
-              <h1 className="text-2xl text-muted-foreground font-medium mb-4">
+              <h1 className="text-2xl text-gray-300 font-medium mb-4">
                 Hello, I'm
               </h1>
-              <h2 className="text-6xl lg:text-8xl font-bold leading-tight">
-                <span className="typewriter hero-text">Tong Duy Tan</span>
+              <h2 className="text-6xl lg:text-8xl font-bold leading-tight text-white">
+                <span className="typewriter hero-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Tong Duy Tan</span>
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-gray-300 leading-relaxed">
                 AI Engineer | Student at UET University of Engineering and Technology
                 specializing in Artificial Intelligence and intelligent system development.
               </p>
@@ -40,7 +42,7 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
-                className="gap-2"
+                className="gap-2 bg-cyan-500 hover:bg-cyan-600 text-white shadow-lg shadow-cyan-500/25"
                 onClick={() => window.open('mailto:td.tan2711@gmail.com', '_blank')}
               >
                 <Mail className="w-4 h-4" />
@@ -52,6 +54,7 @@ const HeroSection = () => {
               <Button 
                 variant="ghost" 
                 size="icon"
+                className="text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 border border-gray-700 hover:border-cyan-500/30"
                 onClick={() => window.open('https://github.com/WelsneilT', '_blank')}
               >
                 <Github className="w-5 h-5" />
@@ -59,6 +62,7 @@ const HeroSection = () => {
               <Button 
                 variant="ghost" 
                 size="icon"
+                className="text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 border border-gray-700 hover:border-cyan-500/30"
                 onClick={() => window.open('https://www.linkedin.com/in/duy-t%C3%A2n-t%E1%BB%91ng-571bb7365/', '_blank')}
               >
                 <Linkedin className="w-5 h-5" />
@@ -68,23 +72,23 @@ const HeroSection = () => {
           
           {/* Stats Card */}
           <div className="flex justify-center">
-            <Card className="p-8 section-gradient card-hover border-border/50">
+            <Card className="p-8 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 shadow-xl shadow-cyan-500/10">
               <div className="grid grid-cols-2 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold hero-text">UET</div>
-                  <div className="text-sm text-muted-foreground">University</div>
+                  <div className="text-3xl font-bold text-cyan-400">UET</div>
+                  <div className="text-sm text-gray-400">University</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold hero-text">AI</div>
-                  <div className="text-sm text-muted-foreground">Major</div>
+                  <div className="text-3xl font-bold text-cyan-400">AI</div>
+                  <div className="text-sm text-gray-400">Major</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold hero-text">3.21</div>
-                  <div className="text-sm text-muted-foreground">GPA</div>
+                  <div className="text-3xl font-bold text-cyan-400">3.21</div>
+                  <div className="text-sm text-gray-400">GPA</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold hero-text">Ready</div>
-                  <div className="text-sm text-muted-foreground">For Work</div>
+                  <div className="text-3xl font-bold text-cyan-400">Ready</div>
+                  <div className="text-sm text-gray-400">For Work</div>
                 </div>
               </div>
             </Card>
