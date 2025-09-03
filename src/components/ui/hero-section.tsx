@@ -21,7 +21,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto max-w-7xl">
         {/* Mobile: Single column centered layout, Desktop: Two column grid */}
-        <div className="flex flex-col xl:grid xl:grid-cols-2 gap-8 xl:gap-16 items-center xl:items-start">
+        <div className="flex flex-col xl:grid xl:grid-cols-2 gap-8 xl:gap-10 items-center xl:items-start">
           {/* Text Content */}
           <div className="space-y-6 xl:space-y-8 text-center xl:text-left w-full">
             <div className="space-y-4">
