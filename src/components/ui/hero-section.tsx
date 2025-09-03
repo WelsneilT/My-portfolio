@@ -14,32 +14,32 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden" style={{ backgroundColor: '#0d1a2d' }}>
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden" style={{ backgroundColor: '#0d1a2d' }}>
       {/* Animated Plexus Background */}
       <PlexusBackground />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
+          <div className="space-y-8">
             <div className="space-y-4">
-              <Badge variant="secondary" className="w-fit bg-cyan-500/20 text-cyan-300 border-cyan-500/30 mx-auto lg:mx-0">
+              <Badge variant="secondary" className="w-fit bg-cyan-500/20 text-cyan-300 border-cyan-500/30">
                 Available for Opportunities
               </Badge>
-              <h1 className="text-xl sm:text-2xl text-gray-300 font-medium mb-4">
+              <h1 className="text-2xl text-gray-300 font-medium mb-4">
                 Hello, I'm
               </h1>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold leading-tight text-white break-words">
-                <span className="typewriter hero-text bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent block">Tong Duy Tan</span>
+              <h2 className="text-6xl lg:text-8xl font-bold leading-tight text-white">
+                <span className="typewriter hero-text bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Tong Duy Tan</span>
               </h2>
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-xl text-gray-300 leading-relaxed">
                 AI Engineer | Student at UET University of Engineering and Technology
                 specializing in Artificial Intelligence and intelligent system development.
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
                 className="gap-2 bg-cyan-500 hover:bg-cyan-600 text-white shadow-lg shadow-cyan-500/25"
@@ -50,7 +50,7 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex gap-4">
               <Button 
                 variant="ghost" 
                 size="icon"
@@ -71,24 +71,24 @@ const HeroSection = () => {
           </div>
           
           {/* Stats Card */}
-          <div className="flex justify-center mt-8 lg:mt-0">
-            <Card className="p-6 sm:p-8 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 shadow-xl shadow-cyan-500/10 w-full max-w-sm">
-               <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 text-center">
+          <div className="flex justify-center">
+            <Card className="p-8 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 shadow-xl shadow-cyan-500/10">
+               <div className="grid grid-cols-2 gap-8 text-center">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">UET</div>
-                  <div className="text-xs sm:text-sm text-gray-400">University</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">UET</div>
+                  <div className="text-sm text-gray-400">University</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">AI</div>
-                  <div className="text-xs sm:text-sm text-gray-400">Major</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">AI</div>
+                  <div className="text-sm text-gray-400">Major</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">3.21</div>
-                  <div className="text-xs sm:text-sm text-gray-400">GPA</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">3.21</div>
+                  <div className="text-sm text-gray-400">GPA</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Ready</div>
-                  <div className="text-xs sm:text-sm text-gray-400">For Work</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Ready</div>
+                  <div className="text-sm text-gray-400">For Work</div>
                 </div>
               </div>
             </Card>
