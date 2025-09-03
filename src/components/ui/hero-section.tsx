@@ -21,28 +21,28 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto max-w-7xl">
         {/* Mobile: Single column centered layout, Desktop: Two column grid */}
-        <div className="flex flex-col xl:grid xl:grid-cols-2 gap-8 xl:gap-10 items-center xl:items-start">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:items-start">
           {/* Text Content */}
-          <div className="space-y-6 xl:space-y-8 text-center xl:text-left w-full">
+          <div className="space-y-6 lg:space-y-8 text-center lg:text-left w-full">
             <div className="space-y-4">
-              <div className="flex justify-center xl:justify-start">
+              <div className="flex justify-center lg:justify-start">
                 <Badge variant="secondary" className="w-fit bg-cyan-500/20 text-cyan-300 border-cyan-500/30">
                   Available for Opportunities
                 </Badge>
               </div>
-              <h1 className="text-xl xl:text-2xl text-gray-300 font-medium mb-4">
+              <h1 className="text-xl lg:text-2xl text-gray-300 font-medium mb-4">
                 Hello, I'm
               </h1>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight text-white break-words">
                 <span className="typewriter hero-text bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Tong Duy Tan</span>
               </h2>
-              <p className="text-lg xl:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto xl:mx-0">
+              <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 AI Engineer | Student at UET University of Engineering and Technology
                 specializing in Artificial Intelligence and intelligent system development.
               </p>
             </div>
             
-            <div className="flex justify-center xl:justify-start">
+            <div className="flex justify-center lg:justify-start">
               <Button 
                 size="lg" 
                 className="gap-2 bg-cyan-500 hover:bg-cyan-600 text-white shadow-lg shadow-cyan-500/25"
@@ -53,7 +53,7 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="flex gap-4 justify-center xl:justify-start">
+            <div className="flex gap-4 justify-center lg:justify-start">
               <Button 
                 variant="ghost" 
                 size="icon"
@@ -74,24 +74,24 @@ const HeroSection = () => {
           </div>
           
           {/* Stats Card */}
-          <div className="flex justify-center xl:justify-end mt-8 xl:mt-0 w-full">
-            <Card className="p-6 xl:p-8 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 shadow-xl shadow-cyan-500/10 w-full max-w-sm xl:max-w-md">
-               <div className="grid grid-cols-2 gap-6 xl:gap-8 text-center">
+          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0 w-full">
+            <Card className="p-6 lg:p-8 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 shadow-xl shadow-cyan-500/10 w-full max-w-sm lg:max-w-md">
+               <div className="grid grid-cols-2 gap-6 lg:gap-8 text-center">
                 <div>
-                  <div className="text-2xl xl:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">UET</div>
-                  <div className="text-xs xl:text-sm text-gray-400">University</div>
+                  <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">UET</div>
+                  <div className="text-xs lg:text-sm text-gray-400">University</div>
                 </div>
                 <div>
-                  <div className="text-2xl xl:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">AI</div>
-                  <div className="text-xs xl:text-sm text-gray-400">Major</div>
+                  <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">AI</div>
+                  <div className="text-xs lg:text-sm text-gray-400">Major</div>
                 </div>
                 <div>
-                  <div className="text-2xl xl:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">3.21</div>
-                  <div className="text-xs xl:text-sm text-gray-400">GPA</div>
+                  <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">3.21</div>
+                  <div className="text-xs lg:text-sm text-gray-400">GPA</div>
                 </div>
                 <div>
-                  <div className="text-2xl xl:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Ready</div>
-                  <div className="text-xs xl:text-sm text-gray-400">For Work</div>
+                  <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-yellow-400 bg-clip-text text-transparent">Ready</div>
+                  <div className="text-xs lg:text-sm text-gray-400">For Work</div>
                 </div>
               </div>
             </Card>
