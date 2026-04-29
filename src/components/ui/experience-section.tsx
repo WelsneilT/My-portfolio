@@ -16,6 +16,45 @@ const ExperienceSection = () => {
         </div>
 
         <div className="space-y-8">
+          {/* Viettel Cyber Security */}
+          <Card className="section-gradient card-hover border-border/50">
+            <CardHeader>
+              <div className="flex items-start gap-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Briefcase className="w-5 h-5 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <CardTitle className="text-xl mb-2">AI Engineer</CardTitle>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-muted-foreground">
+                    <span className="font-medium">Viettel Cyber Security</span>
+                    <span className="hidden sm:inline">•</span>
+                    <div className="flex items-center gap-1">
+                      <MapPin className="w-4 h-4" />
+                      Hanoi, Vietnam
+                    </div>
+                    <span className="hidden sm:inline">•</span>
+                    <div className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      10/2025 - Now
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="ml-16 space-y-4">
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                  <span>Working as an AI Engineer focusing on applying AI/ML techniques to cybersecurity challenges and building intelligent security systems</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                  <span>Researching and developing LLM-powered solutions to enhance threat detection, analysis, and automated response workflows</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
           {/* Work Experience */}
           <Card className="section-gradient card-hover border-border/50">
             <CardHeader>
