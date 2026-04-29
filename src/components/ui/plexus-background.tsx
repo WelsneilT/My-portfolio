@@ -111,8 +111,7 @@ const PlexusBackground: React.FC = () => {
       });
 
       // Draw connections
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
-      ctx.lineWidth = 0.5;
+      ctx.lineWidth = 0.6;
       
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
@@ -121,8 +120,8 @@ const PlexusBackground: React.FC = () => {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < CONNECTION_DISTANCE) {
-            const opacity = (CONNECTION_DISTANCE - distance) / CONNECTION_DISTANCE * 0.3;
-            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
+            const opacity = (CONNECTION_DISTANCE - distance) / CONNECTION_DISTANCE * 0.35;
+            ctx.strokeStyle = `rgba(220, 30, 40, ${opacity})`;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -133,17 +132,17 @@ const PlexusBackground: React.FC = () => {
 
       // Draw particles
       particles.forEach((particle) => {
-        // Glow effect
-        ctx.shadowColor = '#00ffff';
+        // Glow effect (red)
+        ctx.shadowColor = 'rgba(220, 30, 40, 0.6)';
         ctx.shadowBlur = 10;
-        ctx.fillStyle = '#00ffff';
+        ctx.fillStyle = 'rgba(220, 30, 40, 0.9)';
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
         ctx.fill();
 
-        // Inner bright core
+        // Inner dark core
         ctx.shadowBlur = 0;
-        ctx.fillStyle = '#ffffff';
+        ctx.fillStyle = '#1a1a1a';
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, 0.8, 0, Math.PI * 2);
         ctx.fill();
