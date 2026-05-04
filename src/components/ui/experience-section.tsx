@@ -45,11 +45,15 @@ const ExperienceSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Working as an AI Engineer focusing on applying AI/ML techniques to cybersecurity challenges and building intelligent security systems</span>
+                  <span>Building internal Coding Agents powered by LLMs to assist engineers in their daily development workflows, boosting productivity across the company</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Researching and developing LLM-powered solutions to enhance threat detection, analysis, and automated response workflows</span>
+                  <span>Fine-tuning lightweight LLMs for domain-specific tasks, optimizing for both inference cost and performance on cybersecurity use cases</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                  <span>Researching and developing a Text-to-Scala model to automatically translate natural language requirements into Scala code, streamlining engineering work</span>
                 </li>
               </ul>
             </CardContent>
