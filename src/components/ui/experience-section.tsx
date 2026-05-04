@@ -78,7 +78,7 @@ const ExperienceSection = () => {
                     <span className="hidden sm:inline">•</span>
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
-                      6/2025 - 7/2025
+                      6/2025 - 9/2025
                     </div>
                   </div>
                 </div>
