@@ -2,21 +2,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, User, Target, CheckCircle, Mail, Download, Github, Linkedin } from "lucide-react";
+import profileTan from "@/assets/profile-tan.jpg";
 
 const AboutSection = () => {
   const principles = [
     {
-      icon: "⟷",
       title: "From Research to Reality",
       description: "I thrive on translating complex, state-of-the-art research into practical, functional systems. My work begins where the academic paper ends, focusing on building robust and scalable implementations."
     },
     {
-      icon: "⚡",
       title: "Product-Minded Engineering",
       description: "Technology is a tool to solve a human problem. I prioritize understanding the end-user and the business context, ensuring that every line of code contributes to a valuable and impactful final product."
     },
     {
-      icon: "🎯",
       title: "Specialized Domain Focus",
       description: "I believe in the power of deep, focused expertise. My energy and learning are concentrated on applying AI to create meaningful advancements in Education Technology (EdTech) and Financial Technology (FinTech)."
     }
@@ -34,7 +32,7 @@ const AboutSection = () => {
               <div className="relative group">
                 <div className="w-64 h-64 rounded-full overflow-hidden relative border-4 border-background shadow-2xl group-hover:shadow-accent/20 transition-all duration-500">
                   <img 
-                    src="/lovable-uploads/5ccaa63b-23b8-4a00-a482-44838fdebc0a.png" 
+                    src={profileTan} 
                     alt="Professional photo of Tong Duy Tan"
                     className="w-full h-full object-cover object-center"
                     style={{ objectPosition: 'center 25%' }}
@@ -101,10 +99,8 @@ const AboutSection = () => {
                   className="group p-6 bg-card/30 backdrop-blur-sm border border-border/30 hover:border-accent/30 transition-all duration-300 hover:shadow-lg"
                 >
                   <div className="flex items-start gap-6">
-                    {/* Icon */}
-                    <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-xl text-accent flex-shrink-0 border border-accent/20">
-                      {principle.icon}
-                    </div>
+                    {/* Accent bar */}
+                    <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-primary to-primary/30 flex-shrink-0"></div>
                     
                     {/* Content */}
                     <div className="flex-1 space-y-3">
