@@ -37,8 +37,8 @@ const HeroSection = () => {
                 <span className="typewriter bg-gradient-to-r from-primary via-foreground to-primary bg-clip-text text-transparent">Tong Duy Tan</span>
               </h2>
               <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                AI Engineer | Student at UET University of Engineering and Technology
-                specializing in Artificial Intelligence and intelligent system development.
+                Graduated student from University of Engineering and Technology,
+                specializing in Artificial Intelligence with a focus on GenAI, LLMs, and fine-tuning.
               </p>
             </div>
             
@@ -86,7 +86,7 @@ const HeroSection = () => {
                   <div className="text-xs lg:text-sm text-muted-foreground">Major</div>
                 </div>
                 <div>
-                  <div className="text-2xl lg:text-3xl font-bold text-primary">3.21</div>
+                  <div className="text-2xl lg:text-3xl font-bold text-primary">3.27</div>
                   <div className="text-xs lg:text-sm text-muted-foreground">GPA</div>
                 </div>
                 <div>
