@@ -2,21 +2,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, User, Target, CheckCircle, Mail, Download, Github, Linkedin } from "lucide-react";
+import profileTan from "@/assets/profile-tan.jpg";
 
 const AboutSection = () => {
   const principles = [
     {
-      icon: "⟷",
       title: "From Research to Reality",
       description: "I thrive on translating complex, state-of-the-art research into practical, functional systems. My work begins where the academic paper ends, focusing on building robust and scalable implementations."
     },
     {
-      icon: "⚡",
       title: "Product-Minded Engineering",
       description: "Technology is a tool to solve a human problem. I prioritize understanding the end-user and the business context, ensuring that every line of code contributes to a valuable and impactful final product."
     },
     {
-      icon: "🎯",
       title: "Specialized Domain Focus",
       description: "I believe in the power of deep, focused expertise. My energy and learning are concentrated on applying AI to create meaningful advancements in Education Technology (EdTech) and Financial Technology (FinTech)."
     }
