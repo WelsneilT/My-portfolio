@@ -32,7 +32,7 @@ const AboutSection = () => {
               <div className="relative group">
                 <div className="w-64 h-64 rounded-full overflow-hidden relative border-4 border-background shadow-2xl group-hover:shadow-accent/20 transition-all duration-500">
                   <img 
-                    src="/lovable-uploads/5ccaa63b-23b8-4a00-a482-44838fdebc0a.png" 
+                    src={profileTan} 
                     alt="Professional photo of Tong Duy Tan"
                     className="w-full h-full object-cover object-center"
                     style={{ objectPosition: 'center 25%' }}
