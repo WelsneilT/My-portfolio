@@ -149,6 +149,38 @@ const ExperienceSection = () => {
             </CardContent>
           </Card>
         </div>
+
+        {/* Education */}
+        <div className="mt-16">
+          <h3 className="text-3xl font-bold mb-8 text-center">
+            <span className="hero-text">Education</span>
+          </h3>
+          <Card className="section-gradient card-hover border-border/50">
+            <CardHeader>
+              <div className="flex items-start gap-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <GraduationCap className="w-5 h-5 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <CardTitle className="text-xl mb-2">
+                    Bachelor of Engineering — Artificial Intelligence
+                  </CardTitle>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-muted-foreground">
+                    <span className="font-medium">University of Engineering and Technology (VNU-UET)</span>
+                    <span className="hidden sm:inline">•</span>
+                    <div className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      10/2022 - 1/2026
+                    </div>
+                  </div>
+                  <p className="mt-3 text-muted-foreground">
+                    Specialized in Artificial Intelligence with a focus on GenAI, LLMs, and fine-tuning. GPA: 3.27 / 4.0
+                  </p>
+                </div>
+              </div>
+            </CardHeader>
+          </Card>
+        </div>
       </div>
     </section>
   );
