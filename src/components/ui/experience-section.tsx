@@ -45,15 +45,15 @@ const ExperienceSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Building internal Coding Agents powered by LLMs to assist engineers in their daily development workflows, boosting productivity across the company</span>
+                  <span><span className="font-semibold text-foreground">Scope &amp; Problem:</span> Collaborating with AI4LIFE Lab (HUST) to research and develop a specialized LLM that serves as the "brain" for an internal Coding Agent, focused on the Text-to-Scala task tailored to the company's data querying needs</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Fine-tuning lightweight LLMs for domain-specific tasks, optimizing for both inference cost and performance on cybersecurity use cases</span>
+                  <span><span className="font-semibold text-foreground">My Solution:</span> Built the model from scratch and owned the full pipeline — from data collection, processing, and cleaning, to fine-tuning with SFT, DPO, and related alignment techniques</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Researching and developing a Text-to-Scala model to automatically translate natural language requirements into Scala code, streamlining engineering work</span>
+                  <span><span className="font-semibold text-foreground">Impact:</span> Delivered a self-hostable model capable of replacing GPT-4 / Gemini for code generation, serving as a generalizable baseline that can be extended to other query languages beyond Scala</span>
                 </li>
               </ul>
             </CardContent>
