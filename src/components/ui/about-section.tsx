@@ -46,7 +46,7 @@ const AboutSection = () => {
             </div>
 
             {/* Identity Section */}
-            <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-6 text-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-2">
                   Tong Duy Tan
