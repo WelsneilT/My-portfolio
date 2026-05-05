@@ -28,14 +28,14 @@ const AboutSection = () => {
           {/* Left Column - 40% width (Identity) */}
           <div className="lg:col-span-2 space-y-8">
             {/* Profile Picture */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center">
               <div className="relative group">
                 <div className="w-64 h-64 rounded-full overflow-hidden relative border-4 border-background shadow-2xl group-hover:shadow-accent/20 transition-all duration-500">
                   <img 
                     src={profileTan} 
                     alt="Professional photo of Tong Duy Tan"
                     className="w-full h-full object-cover scale-[1.6]"
-                    style={{ objectPosition: '72% 12%' }}
+                    style={{ objectPosition: '82% 12%' }}
                     loading="eager"
                     decoding="async"
                   />
@@ -46,7 +46,7 @@ const AboutSection = () => {
             </div>
 
             {/* Identity Section */}
-            <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-6 text-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-2">
                   Tong Duy Tan
@@ -64,7 +64,7 @@ const AboutSection = () => {
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-3 justify-center lg:justify-start">
+              <div className="flex gap-3 justify-center">
                 <Button 
                   variant="ghost" 
                   size="icon" 
