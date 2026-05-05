@@ -35,7 +35,7 @@ const AboutSection = () => {
                     src={profileTan} 
                     alt="Professional photo of Tong Duy Tan"
                     className="w-full h-full object-cover scale-[1.4]"
-                    style={{ objectPosition: '95% 30%' }}
+                    style={{ objectPosition: '100% 30%' }}
                     loading="eager"
                     decoding="async"
                   />
