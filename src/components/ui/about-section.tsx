@@ -34,8 +34,10 @@ const AboutSection = () => {
                   <img 
                     src={profileTan} 
                     alt="Professional photo of Tong Duy Tan"
-                    className="w-full h-full object-cover scale-125"
-                    style={{ objectPosition: '35% 20%' }}
+                    className="w-full h-full object-cover scale-[2.2]"
+                    style={{ objectPosition: '63% 28%' }}
+                    loading="eager"
+                    decoding="async"
                   />
                 </div>
                 {/* Hover Ring */}
