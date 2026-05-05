@@ -64,7 +64,7 @@ const AboutSection = () => {
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-3 justify-center lg:justify-start">
+              <div className="flex gap-3 justify-center">
                 <Button 
                   variant="ghost" 
                   size="icon" 
